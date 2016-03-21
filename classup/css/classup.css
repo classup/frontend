@@ -1,0 +1,74 @@
+/*
+Zerotheme.com | Free Html5 Responsive Templates
+classup - A Single Grid System for Responsive Design
+Author: Kimmy
+Version : 3.0
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.classup{ width: 1200px; position: relative; margin: 0 auto; padding: 0px;}
+.classup:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.classup .f-right{float: right!important;}
+.classup .f-left{float: left!important;}
+
+.classup .row{}
+.classup .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.classup .row:after{clear: both; }
+.classup .row{zoom: 1;}
+
+.classup .wrap-col{margin:10px;}
+
+.classup .col-1-2, .classup .col-1-3, .classup .col-2-3, .classup .col-1-4, .classup .col-2-4, .classup .col-3-4, .classup .col-1-5, .classup .col-2-5, .classup .col-3-5, .classup .col-4-5, .classup .col-1-6, .classup .col-2-6, .classup .col-3-6, .classup .col-4-6, .classup .col-5-6{float:left; display: inline-block;}
+
+.classup .col-full{width:100%;}
+
+.classup .col-1-2,.classup .col-1-2-fixed{width:50%;}
+.classup .offset-1-2{margin-left: 50%;}
+
+.classup .col-1-3,.classup .col-1-3-fixed{width:33.33%;}
+.classup .col-2-3,.classup .col-2-3-fixed{width:66.66%;}
+.classup .offset-1-3{margin-left: 33.33%;}
+.classup .offset-2-3{margin-left: 66.66%;}
+
+.classup .col-1-4,.classup .col-1-4-fixed{width:25%;}
+.classup .col-2-4,.classup .col-2-4-fixed{width:50%;}
+.classup .col-3-4,.classup .col-3-4-fixed{width:75%;}
+.classup .offset-1-4{margin-left: 25%;}
+.classup .offset-2-4{margin-left: 50%;}
+.classup .offset-3-4{margin-left: 75%;}
+
+.classup .col-1-5,.classup .col-1-5-fixed{width:20%;}
+.classup .col-2-5,.classup .col-2-5-fixed{width:40%;}
+.classup .col-3-5,.classup .col-3-5-fixed{width:60%;}
+.classup .col-4-5,.classup .col-4-5-fixed{width:80%;}
+.classup .offset-1-5{margin-left: 20%;}
+.classup .offset-2-5{margin-left: 40%;}
+.classup .offset-3-5{margin-left: 60%;}
+.classup .offset-4-5{margin-left: 80%;}
+
+.classup .col-1-6,.classup .col-1-6-fixed{width:16.66%;}
+.classup .col-2-6,.classup .col-2-6-fixed{width:33.33%;}
+.classup .col-3-6,.classup .col-3-6-fixed{width:50%;}
+.classup .col-4-6,.classup .col-4-6-fixed{width:66.66%;}
+.classup .col-5-6,.classup .col-5-6-fixed{width:83.33%;}
+.classup .offset-1-6{margin-left: 16.66%;}
+.classup .offset-2-6{margin-left: 33.33%;}
+.classup .offset-3-6{margin-left: 50%;}
+.classup .offset-4-6{margin-left: 66.66%;}
+.classup .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.classup{width:960px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.classup{width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.classup, .classup .col-1-2, .classup .col-1-3, .classup .col-2-3, .classup .col-1-4, .classup .col-2-4, .classup .col-3-4, .classup .col-1-5, .classup .col-2-5, .classup .col-3-5, .classup .col-4-5, .classup .col-1-6, .classup .col-2-6, .classup .col-3-6, .classup .col-4-6, .classup .col-5-6{width:100%;}
+	
+	.classup .offset-1-2, .classup .offset-1-3, .classup .offset-2-3, .classup .offset-1-4, .classup .offset-2-4, .classup .offset-3-4, .classup .offset-1-5, .classup .offset-2-5, .classup .offset-3-5, .classup .offset-4-5, .classup .offset-1-6, .classup .offset-2-6, .classup .offset-3-6, .classup .offset-4-6, .classup .offset-5-6{margin-left:0;}
+}
