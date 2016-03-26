@@ -1,9 +1,37 @@
-var app=angular.module("root", [])
-	app.controller("index", ["$scope", function($scope) {
+var app=angular.module("root", []);
+	app.controller("index",["$scope", function($scope) {
+
+		$scope.products = {};
 		$scope.products = [
-			{id: 1, name: "Hockey puck"},
-			{id: 2, name: "Golf club"},
-			{id: 3, name: "Baseball bat"},
-			{id: 4, name: "Lacrosse stick"}
-		];
+			{
+		    name : "Sinhal Classes",
+		    contact : "789654133",
+		    img : "images/sinhals.jpg"
+		    },
+		    {
+		    name : "Vidhyalankar Classes",
+		    contact : "789654123"  ,
+		    img : "images/sinhals.jpg"
+		    },
+		    {
+		    name : "Sinhal Classes",
+		    contact : "789654133",
+		    img : "images/sinhals.jpg"
+		    },
+		    {
+		    name : "Vidhyalankar Classes",
+		    contact : "789654123" ,
+		    img : "images/sinhals.jpg"
+		    },
+		    {
+		    name : "Sinhal Classes",
+		    contact : "789654133",
+		    img : "images/sinhals.jpg"
+		    },
+		    {
+		    name : "Vidhyalankar Classes",
+		    contact : "789654123" ,
+		    img : "images/sinhals.jpg"
+		    }
+		    ];
 }]);

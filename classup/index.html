@@ -1,4 +1,5 @@
-<!DOCTYPE html ng-app="classUp">
+<!DOCTYPE html>
+<html>
 <head>
   
 	<meta charset="utf-8">
@@ -33,38 +34,38 @@
     </script>
     	
 </head>
-<body ng-controller="enggclasscontroller as cc">
-<div class="wrap-body">
+<body ng-app="classUp">
+<div class="wrap-body" ng-controller="enggclasscontroller as cc">
 
 <!--Header-->
 <header >
 	<div class="wrap-header classup">
 		<div class="row">
 			<div id="cssmenu">
-							<nav>
-  <ul>
-    <li id="login">
-      <a id="login-trigger" href="#">
-        Log in <span>▼</span>
-      </a>
-      <div id="login-content">
-        <form>
-          <fieldset id="inputs">
-            <input id="username" type="email" name="Email" placeholder="Your email address" required>   
-            <input id="password" type="password" name="Password" placeholder="Password" required>
-          </fieldset>
-          <fieldset id="actions">
-            <input type="submit" id="submit" value="Log in">
-            <label><input type="checkbox" checked="checked"> Keep me signed in</label>
-          </fieldset>
-        </form>
-      </div>                     
-    </li>
-    <li id="signup">
-      <a href="">Sign up FREE</a>
-    </li>
-  </ul>
-</nav>
+	           <nav>
+                  <ul>
+                    <li id="login">
+                      <a id="login-trigger" href="#">
+                        Log in <span>▼</span>
+                      </a>
+                      <div id="login-content">
+                        <form>
+                          <fieldset id="inputs">
+                            <input id="username" type="email" name="Email" placeholder="Your email address" required>   
+                            <input id="password" type="password" name="Password" placeholder="Password" required>
+                          </fieldset>
+                          <fieldset id="actions">
+                            <input type="submit" id="submit" value="Log in">
+                            <label><input type="checkbox" checked="checked"> Keep me signed in</label>
+                          </fieldset>
+                        </form>
+                      </div>                     
+                    </li>
+                    <li id="signup">
+                      <a href="">Sign up FREE</a>
+                    </li>
+                  </ul>
+                </nav>
 			</div>
 			<a href='index.html' class="logo"><img src="images/logo.png" alt="CLASSUP LOGO"/></a>
 		</div>
@@ -86,28 +87,28 @@
                                 <a href ng-click="cc.selectTab(3)">Subject</a></li>
                             <li ng-class="{active:cc.isSelected(4)}">
                                 <a href ng-click="cc.selectTab(4)">Location</a></li>
-                    </ul>
+                        </ul>
                         </div>
 				
 				</div>
                 <div class="searchbox">
-                <form>
-                <input type="text" name="serach" id="serach" placeholder="Search your Query">
+                    <form>
+                    <input type="text" name="serach" id="serach" placeholder="Search your Query">
 
-                <button type="submit" id="submit" value="Search">SEARCH</button>    
+                    <button type="submit" id="submit" value="Search">SEARCH</button>    
 
-                </form>
+                    </form>
        
-	</div>
+	           </div>
 	<div class="clear"></div>
+    </div>
+    </div>
 </div>
-
-
 <!--Container-->
 <section id="container" ng-init="tab=1">
 	<div class="wrap-container">
-                <section class="content-box box-1">
-                <div class="classup">
+            <section class="content-box box-1">
+            <div class="classup">
 				<div class="header">
 					<h2 class="heading">
 						<div id="cssmenu">
@@ -141,10 +142,12 @@
 				</div>
 			</div>
 		</section>
+        </div>
+        </section>
 		
 <!--Footer-->
-<footer>
-		<div class="wrap-footer">
+<!-- <footer>
+	<div class="wrap-footer">
 		<div class="classup">
 			<div class="row">
 				<h3>Contact</h3>
@@ -154,6 +157,7 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> -->
 </div>
-</body></html>
+</body>
+</html>
