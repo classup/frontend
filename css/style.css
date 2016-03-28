@@ -55,7 +55,7 @@ p{margin: 10px 0;color: #777;}
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 html, body {width:100%; padding:0; margin:0;}
-body {background: #fff;color: #3F3F3F;font: 14px/25px Arial, Helvetica, sans-serif;font-family: Montserrat, sans-serif;}
+body {background: #ffffff ;color: #3F3F3F;font: 14px/25px Arial, Helvetica, sans-serif;font-family: Montserrat, sans-serif;}
 body .wrap-body{}
 
 /* ---------------------------------------------------------------------------- */
@@ -93,12 +93,13 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
     text-transform: uppercase;
     transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
     transform-style: flat;
-    width: 100%;
+    width: 50%;
 }
 .heading1
 {
+
     width:20%;
-    background: #a5e79b none repeat scroll 0 0;
+    background: #a5e79b;
     border-right: 6px solid #F3542D;
     color: #ffffff;
     display: inline-block;
@@ -109,18 +110,35 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
     padding: 10px 20px;
     position: relative;
     text-transform: uppercase;
-    transform: rotate(0deg) scale(1.003) translate(0px);
+    transform: rotate(0deg) scale(1.003) translate(0px) skew(0deg);
     transform-style: flat;
     display: inline-block;
+    margin-left: 2%;
+}
+img{
+  border-radius: 50%;
 }
 .heading span {
     display: block;
     transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
     transform-style: flat;
 }
+/*
 .classes{
   display: inline-block;
+  float: right;
+  width: 100%;
+}*/
+
+.col-1-3{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
 }
+
+
+
 @media(max-width: 768px){
 	.heading {font-size: 25px;}
 }
@@ -148,6 +166,8 @@ img {
 
 }
 .classes{
+  
+    margin-right:20%;
   width: 50%;
   float:right;
   display: inline-block;
@@ -160,18 +180,19 @@ img {
   display: inline-block;
 }
 .col-1-3{
-    position: relative;
-    float: left;
+
+  margin-top: 2%;
+  position: relative;
+  float: left;
 	overflow: hidden;
 	display: inline-block;
-	width: 100%;
+	width: 50%;
 }
 .classes,.col-1-3{
   display: inline-block;
 }
-/*
-.col-1-3 .sinhal {
-  height: 30%;
+
+
 
 /* ---content-box--- */
 .content-box {margin-bottom: 30px;}

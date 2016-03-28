@@ -70,7 +70,7 @@
 				<div class="header">
 					<h2 class="heading">
 						<div id="cssmenu">
-                        <ul>
+                        <ul> 
                             <li ng-class="{active:isSelected(1)}">
                                 <a href ng-click="selectTab(1)">Stream</a></li>
                             <li ng-class="{active:isSelected(2)}">
@@ -90,22 +90,51 @@
 				<div class="one">
 				
 					<h2 class="heading1">
-						<div id="cssmenu">
+						<div id="cssmenu" ng-show="tabselected==1">
                         <ul>
                             <li ng-class="{active:isSelected(1)}">
-                                <a href ng-click="selectTab(1)">Mumbai</a></li><br>
-                            <li ng-class="{active:isSelected(2)}">
-                                <a href ng-click="selectTab(2)">Delhi</a></li><br>
-                            <li ng-class="{active:isSelected(3)}">
-                                <a href ng-click="selectTab(3)">Banglore</a></li><br>
-                            <li ng-class="{active:cc.isSelected(4)}">
-                                <a href ng-click="cc.selectTab(4)">XII Sci</a></li><br>
+                                <a href ng-click="selectTabb(4)">Science</a></li><br>
+                            <li ng-class="{active:isSelected(1)}">
+                                <a href ng-click="selectTabb(5)">Arts</a></li><br>
+                            <li ng-class="{active:isSelected(1)}">
+                                <a href ng-click="selectTabb(6)">Commerce</a></li><br>
+                           <!-- <li ng-class="{active:cc.isSelected(4)}">
+                                <a href ng-click="cc.selectTab(4)"></a></li><br>
                             <li ng-class="{active:cc.isSelected(5)}">
-                                <a href ng-click="cc.selectTab(5)">B.E</a></li><br>
+                                <a href ng-click="cc.selectTab(5)">B.E</a></li><br>-->
                         </ul>
                         </div>
-					</h2>				
-					 <div class="classes" ng-show="tabselected==1">
+                        <div id="cssmenu" ng-show="tabselected==2">
+                        <ul>
+                            <li ng-class="{active:isSelected(2)}">
+                                <a href ng-click="selectTabb(7)">Bee</a></li><br>
+                            <li ng-class="{active:isSelected(2)}">
+                                <a href ng-click="selectTabb(8)">Mechanics</a></li><br>
+                            <li ng-class="{active:isSelected(2)}">
+                                <a href ng-click="selectTabb(9)">Maths</a></li><br>
+                           <!-- <li ng-class="{active:cc.isSelected(4)}">
+                                <a href ng-click="cc.selectTab(4)">XII Sci</a></li><br>
+                            <li ng-class="{active:cc.isSelected(5)}">
+                                <a href ng-click="cc.selectTab(5)">B.E</a></li><br>-->
+                        </ul>
+                        </div>
+                        <div id="cssmenu" ng-show="tabselected==3">
+                        <ul>
+                            <li ng-class="{active:isSelected(3)}">
+                                <a href ng-click="selectTabb(10)">Mumbai</a></li><br>
+                            <li ng-class="{active:isSelected(3)}">
+                                <a href ng-click="selectTabb(11)">Delhi</a></li><br>
+                            <li ng-class="{active:isSelected(3)}">
+                                <a href ng-click="selectTabb(12)">Banglore</a></li><br>
+                            <!--<li ng-class="{active:cc.isSelected(4)}">
+                                <a href ng-click="cc.selectTab(4)">XII Sci</a></li><br>
+                            <li ng-class="{active:cc.isSelected(5)}">
+                                <a href ng-click="cc.selectTab(5)">B.E</a></li><br>-->
+                        </ul>
+                        </div>
+					</h2>
+									
+					 <div class="classes" ng-show="tabselected2==10">
 					  <div class="col-1-3" ng-repeat="product in Mumbai">
 					  	<ul>
 					  		<img ng-src='{{product.image}}'/>
@@ -117,7 +146,7 @@
 					  	</ul>				  	
 					 </div>
 					  </div>
-					  <div class="classes" ng-show="tabselected==2">
+					  <div class="classes" ng-show="tabselected2==11">
 					  <div class="col-1-3" ng-repeat="product in Delhi">
 					  	<ul>
 					  		<img ng-src='{{product.image}}'/>
@@ -129,13 +158,90 @@
 					  	</ul>				  	
 					 </div>
 					  </div>
-					  <div class="classes" ng-show="tabselected==3">
+
+					  <div class="classes" ng-show="tabselected2==12">
 					  <div class="col-1-3" ng-repeat="product in Banglore">
 					  	<ul>
 					  		<img ng-src='{{product.image}}'/>
 					  		<li>{{product.name}}</li>
 					  		<li>{{product.contact}}</li>
 					  		<li>{{product.location}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+
+					 <div class="classes" ng-show="tabselected2==4">
+					  <div class="col-1-3" ng-repeat="product in Science">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.stream}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+
+					 <div class="classes" ng-show="tabselected2==5">
+					  <div class="col-1-3" ng-repeat="product in Arts">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.stream}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+
+					 <div class="classes" ng-show="tabselected2==6">
+					  <div class="col-1-3" ng-repeat="product in Commerce">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.stream}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+
+					 <div class="classes" ng-show="tabselected2==7">
+					  <div class="col-1-3" ng-repeat="product in Bee">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.subject}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+					  <div class="classes" ng-show="tabselected2==8">
+					  <div class="col-1-3" ng-repeat="product in Mechanics">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.subject}}</li>
+					  	    <li>{{product.email}}</li>
+		                	<a class="btn" href="sinhals.html">More Details</a>
+					  	</ul>				  	
+					 </div>
+					  </div>
+					  <div class="classes" ng-show="tabselected2==9">
+					  <div class="col-1-3" ng-repeat="product in Maths">
+					  	<ul>
+					  		<img ng-src='{{product.image}}'/>
+					  		<li>{{product.name}}</li>
+					  		<li>{{product.contact}}</li>
+					  		<li>{{product.subject}}</li>
 					  	    <li>{{product.email}}</li>
 		                	<a class="btn" href="sinhals.html">More Details</a>
 					  	</ul>				  	
